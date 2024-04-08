@@ -1,5 +1,8 @@
+// const fs = require('fs/promises');
 import fs from "fs/promises";
+// const path = require('path');
 import path from "path";
+// const { nanoid } = require('nanoid');
 import { nanoid } from "nanoid";
 
 const contactsPath = path.join("db", "contacts.json");
