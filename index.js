@@ -1,5 +1,6 @@
-// const { program } = require('commander');
-import { program } from "commander";
+// const { Command } = require("commander");
+import { Command } from "commander";
+const program = new Command();
 
 // prettier-ignore
 import { getContactById, listContacts, removeContact, addContact } from "./contacts.js";
