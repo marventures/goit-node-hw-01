@@ -10,8 +10,7 @@ program
   .option("-i, --id <type>")
   .option("-n, --name <type>")
   .option("-e, --email <type>")
-  .option("-p, --phone <type>")
-  .allowUnknownOption(true);
+  .option("-p, --phone <type>");
 
 program.parse();
 
