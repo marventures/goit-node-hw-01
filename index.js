@@ -10,7 +10,8 @@ program
   .option("-i, --id <type>")
   .option("-n, --name <type>")
   .option("-e, --email <type>")
-  .option("-p, --phone <type>");
+  .option("-p, --phone <type>")
+  .allowUnknownOption(true);
 
 program.parse();
 
@@ -20,7 +21,7 @@ const invokeAction = async ({ action, id, name, email, phone }) => {
   switch (action) {
     case "list":
       const contacts = await listContacts();
-      console.log(contacts);
+      console.table(contacts);
       break;
 
     case "get":
